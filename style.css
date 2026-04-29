@@ -1,3 +1,57 @@
-:root{
+:root {
+    --logo_font: changa One;
+    --logo_color1: rgb(143, 0, 143);
+    --logo_color2: rgb(251, 255, 0);
+    --body_color: rgb(86, 0, 69);
+    --backg_color: rgb(64, 0, 51);
+    --main_text: roboto;
+    --aditional_text: nunito;
+}
+
+.logo {
+    font-family: changa One;
+    color: var(--logo_color1);
+    letter-spacing: 1px;
+    font-size: 40px;
+    margin-left: 2%;
+}
+
+.logo strong {
+    color: var(--logo_color2);
+}
+
+body {
+    background-color: var(--body_color);
+    margin: 0 auto;
+    min-height: 1000px;
     
+}
+
+header {
+    display: flex;
+    position: sticky;
+    background-color: var(--backg_color);
+    margin: 0 auto;
+    z-index: 10;
+    top: 0;
+    height: 85px    ;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--logo_color2);
+    font-family:var(--main_text) ;
+    font-size: 25px;
+    margin-left: 40px;
+    
+}
+nav{
+    margin: 0 auto;
+    align-self: center;
+}
+.hero{
+    font-size: 45px;
+    color: var(--logo_color1);
+    margin-left: 45px;
+    margin-top: 140px;
 }
