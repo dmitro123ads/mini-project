@@ -1,10 +1,10 @@
 :root {
     --logo_font: changa One;
     --logo_color1: rgb(143, 0, 143);
-    --logo_color2: rgb(251, 255, 0);
-    --body_color: rgb(86, 0, 69);
-    --backg_color: rgb(64, 0, 51);
-    --main_text: roboto;
+    --logo_color2: #ffd700;
+    --body_color: #4b0082;
+    --backg_color: #0d0216;
+    --main_text: Inria Sans;
     --aditional_text: nunito;
 }
 
@@ -40,7 +40,7 @@ header {
 nav a {
     text-decoration: none;
     color: var(--logo_color2);
-    font-family:var(--main_text) ;
+    font-family:var(--aditional_text) ;
     font-size: 25px;
     margin-left: 40px;
     
@@ -51,7 +51,8 @@ nav{
 }
 .hero{
     font-size: 45px;
-    color: var(--logo_color1);
+    color: var(--logo_color2);
     margin-left: 45px;
     margin-top: 140px;
+    font-family: var(--main_text);
 }
