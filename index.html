@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <h1 class="logo">GAME_<strong>LIB</strong></h1>
@@ -21,6 +25,50 @@
         <section class="hero">
             <h2>Top games of any genre</h2>
         </section>
+        <section class="game-backg">
+        <section class="genre">
+            <h2>Horor</h2>
+        </section>
+        <section class="horor">
+            <div class="game-card">
+                <div class="game-img">
+
+                    <div class="but_cont">
+                        <button data-modal-open class="but">MORE</button>
+                    </div>
+                </div>
+                <div class="game-info">
+                    <h3 class="game-name">Phasmophobia</h3>
+                    <p class="game-price">389 грн</p>
+                </div>
+            </div>
+            <div class="game-card">
+                <div class="game-img">
+
+                    <div class="but_cont">
+                        <button data-modal-open class="but">MORE</button>
+                    </div>
+                </div>
+                <div class="game-info">
+                    <h3 class="game-name">Phasmophobia</h3>
+                    <p class="game-price">389 грн</p>
+                </div>
+            </div>
+        </section>
+</section>
+
+        <section class="fps"></section>
+        <section class="survival"></section>
     </main>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button data-modal-close class="x">✕</button>
+            <h2>Контакти</h2>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
 </body>
+
 </html>
