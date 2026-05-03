@@ -66,7 +66,7 @@
 }
 
 body {
-    background-color: var(--body_color);
+    background-image: linear-gradient(var(--backg_color ),var(--body_color),var(--body_color), var(--backg_color));
     margin: 0 auto;
     min-height: 2000px;
     
@@ -94,6 +94,10 @@ nav{
     margin: 0 auto;
     align-self: center;
 }
+.pfp{
+    margin: 25px;
+    width: 35px;
+}
 .hero{
     font-size: 45px;
     color: var(--logo_color2);
@@ -110,6 +114,8 @@ nav{
 .game-card:hover{
     transform: translateY(-6px);
     box-shadow: 1px 2px 2px 1px var(--shadow) ;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 .game-img{
     display: flex;
@@ -160,4 +166,9 @@ nav{
 .game-backg{
     
     padding: 15px;
+}
+footer{
+    margin-top: 150px;
+    background-color: var(--backg_color);
+    height: 300px;
 }
