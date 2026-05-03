@@ -62,3 +62,67 @@
         refs.modal.classList.toggle("is-hidden");
     }
 })();
+// 5 модалка
+(() => {
+    const refs = {
+        openModalBtn: document.querySelector("[data-modal-open5]"),
+        closeModalBtn: document.querySelector("[data-modal-close5]"),
+        modal: document.querySelector("[data-modal5]"),
+    };
+
+    refs.openModalBtn.addEventListener("click", toggleModal);
+    refs.closeModalBtn.addEventListener("click", toggleModal);
+
+    function toggleModal() {
+        refs.modal.classList.toggle("is-hidden");
+    }
+})();
+
+// 6 модалка
+(() => {
+    const refs = {
+        openModalBtn: document.querySelector("[data-modal-open6]"),
+        closeModalBtn: document.querySelector("[data-modal-close6]"),
+        modal: document.querySelector("[data-modal6]"),
+    };
+
+    refs.openModalBtn.addEventListener("click", toggleModal);
+    refs.closeModalBtn.addEventListener("click", toggleModal);
+
+    function toggleModal() {
+        refs.modal.classList.toggle("is-hidden");
+    }
+})();
+
+
+// 7 модалка
+(() => {
+    const refs = {
+        openModalBtn: document.querySelector("[data-modal-open7]"),
+        closeModalBtn: document.querySelector("[data-modal-close7]"),
+        modal: document.querySelector("[data-modal7]"),
+    };
+
+    refs.openModalBtn.addEventListener("click", toggleModal);
+    refs.closeModalBtn.addEventListener("click", toggleModal);
+
+    function toggleModal() {
+        refs.modal.classList.toggle("is-hidden");
+    }
+})();
+
+// 8 модалка
+(() => {
+    const refs = {
+        openModalBtn: document.querySelector("[data-modal-open8]"),
+        closeModalBtn: document.querySelector("[data-modal-close8]"),
+        modal: document.querySelector("[data-modal8]"),
+    };
+
+    refs.openModalBtn.addEventListener("click", toggleModal);
+    refs.closeModalBtn.addEventListener("click", toggleModal);
+
+    function toggleModal() {
+        refs.modal.classList.toggle("is-hidden");
+    }
+})();
