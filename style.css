@@ -5,10 +5,10 @@
     --modal_back: rgba(3, 22, 2, 0.5);
     --body_color: rgb(67, 0, 114);
     --backg_color: #0d0216;
-    --shadow:rgba(0, 0, 0, 0.8);
+    --shadow: rgba(0, 0, 0, 0.8);
     --main_text: Inria Sans;
     --aditional_text: nunito;
-    --games_back: rgba(0,0,0,0.2)
+    --games_back: rgba(0, 0, 0, 0.2)
 }
 
 .logo {
@@ -31,7 +31,7 @@
     height: 100%;
     background-color: var(--modal_back);
     z-index: 100;
-    
+
 }
 
 .backdrop2 {
@@ -55,21 +55,38 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    min-width: 800px;
-    min-height: 300px;
+    min-width: 1000px;
+    min-height: 600px;
     padding: 14px;
     background-color: var(--body_color);
     border-radius: 8px;
     box-shadow: 0 4px 24px black;
     color: var(--aditional_text);
+    animation:modal 2s ease forwards;
 
 }
 
+@keyframes modal {
+    0% {
+        min-height: 50px;
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    100% {
+        min-height: 600px;
+        transform: scale(1);
+        opacity: 1;
+    }
+
+}
+
+
 body {
-    background-image: linear-gradient(var(--backg_color ),var(--body_color),var(--body_color), var(--backg_color));
+    background-image: linear-gradient(var(--backg_color), var(--body_color), var(--body_color), var(--backg_color));
     margin: 0 auto;
     min-height: 2000px;
-    
+
 }
 
 header {
@@ -79,58 +96,64 @@ header {
     margin: 0 auto;
     z-index: 10;
     top: 0;
-    height: 85px    ;
+    height: 85px;
 }
 
 nav a {
     text-decoration: none;
     color: var(--logo_color2);
-    font-family:var(--aditional_text) ;
+    font-family: var(--aditional_text);
     font-size: 25px;
     margin-left: 40px;
-    
+
 }
-nav{
+
+nav {
     margin: 0 auto;
     align-self: center;
 }
-.pfp{
+
+.pfp {
     margin: 25px;
     width: 35px;
 }
-.hero{
+
+.hero {
     font-size: 45px;
     color: var(--logo_color2);
     margin-left: 45px;
     margin-top: 140px;
     font-family: var(--main_text);
 }
-.game-card{
+
+.game-card {
     transition: box-shadow;
     transition-timing-function: ease-out;
-    margin: 0 auto  ;
+    margin: 0 auto;
 }
 
-.game-card:hover{
+.game-card:hover {
     transform: translateY(-6px);
-    box-shadow: 1px 2px 2px 1px var(--shadow) ;
+    box-shadow: 1px 2px 2px 1px var(--shadow);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
-.game-img{
+
+.game-img {
     display: flex;
     width: 318px;
     height: 489px;
     background-image: url(./img/phasmophobia.webp);
-    
+
 }
-.but{
+
+.but {
     z-index: 10;
     position: absolute;
     transform: translate(110px, 900%);
     background-color: var(--body_color);
     color: var(--logo_color2);
-    border:  1px var(--logo_color2) solid;
+    border: 1px var(--logo_color2) solid;
     font-family: var(--main_text);
     border-radius: 20px;
     width: 100px;
@@ -141,13 +164,17 @@ nav{
     transition-delay: 100ms;
     transition-timing-function: ease-out;
 }
-.game-img:hover .but{
+
+.game-img:hover .but {
     opacity: 1;
 }
-.game-name,.game-price{
+
+.game-name,
+.game-price {
     color: var(--logo_color2);
     font-family: var(--aditional_text);
 }
+
 .horor {
     border-radius: 20px;
     display: grid;
@@ -155,19 +182,21 @@ nav{
     background-color: var(--games_back);
 }
 
-.genre{
-    
+.genre {
+
     font-size: 45px;
     color: var(--logo_color2);
     margin-left: 45px;
     margin-top: 140px;
     font-family: var(--main_text);
 }
-.game-backg{
-    
+
+.game-backg {
+
     padding: 15px;
 }
-footer{
+
+footer {
     margin-top: 150px;
     background-color: var(--backg_color);
     height: 300px;
