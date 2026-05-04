@@ -49,22 +49,33 @@
     visibility: hidden;
     pointer-events: none;
 }
+.x{
+    max-height: 25px;
+    max-width: 25px;
+}
 
 .modal {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 10%;
+    left: 10%;
+    transform: translate(-50%, -50%) scale(0.5);
     min-width: 1000px;
-    min-height: 600px;
+    max-height: 600px;
     padding: 14px;
     background-color: var(--body_color);
     border-radius: 8px;
     box-shadow: 0 4px 24px black;
     color: var(--aditional_text);
-    animation:modal 2s ease forwards;
-
+    opacity: 0;
 }
+
+.backdrop:not(.is-hidden) .modal {
+    animation: modal 0.4s ease forwards;
+}
+
+
 
 @keyframes modal {
     0% {
@@ -146,7 +157,27 @@ nav {
     background-image: url(./img/phasmophobia.webp);
 
 }
+.game-img2 {
+    display: flex;
+    width: 318px;
+    height: 489px;
+    background-image: url(./img/repo.webp);
 
+}
+.game-img3 {
+    display: flex;
+    width: 318px;
+    height: 489px;
+    background-image: url(./img/outlast.webp);
+
+}
+.game-img4 {
+    display: flex;
+    width: 318px;
+    height: 489px;
+    background-image: url(./img/phasmophobia.webp);
+
+}
 .but {
     z-index: 10;
     position: absolute;
@@ -165,7 +196,7 @@ nav {
     transition-timing-function: ease-out;
 }
 
-.game-img:hover .but {
+.game-img:hover .but,.game-img2:hover .but,.game-img3:hover .but,.game-img4:hover .but {
     opacity: 1;
 }
 
@@ -195,6 +226,28 @@ nav {
 
     padding: 15px;
 }
+.game-name-modal{
+    display: flex;
+    font-size: 30px;
+    height: 50px;
+    color: var(--logo_color2);
+    font-family: var(--main_text);
+}
+
+.game-desk{
+    display: flex;
+    color: var(--logo_color2);
+    font-family: var(--aditional_text);
+    font-size: 20px;
+    width: 600px;
+}
+.game-img-modal{
+    display: flex;
+    width: 70%;
+    height: 590px;
+    justify-self: end;
+}
+
 
 footer {
     margin-top: 150px;
