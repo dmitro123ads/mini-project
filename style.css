@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 :root {
     --logo_font: changa One;
     --logo_color1: rgb(143, 0, 143);
@@ -52,6 +55,9 @@
 .x{
     max-height: 25px;
     max-width: 25px;
+    background-color: var(--backg_color);
+    color: var(--logo_color2);
+    cursor: pointer;
 }
 
 .modal {
@@ -123,6 +129,9 @@ nav {
     margin: 0 auto;
     align-self: center;
 }
+nav a:hover{
+    color: var(--logo_color1);
+}
 
 .pfp {
     margin: 25px;
@@ -135,6 +144,43 @@ nav {
     margin-left: 45px;
     margin-top: 140px;
     font-family: var(--main_text);
+}
+.horor_but{
+    background-image: url(./img/phasmophobia.webp);
+    height: 80px;
+    width: 250px;
+    border-radius: 15px;
+    color: var(--logo_color2);
+    animation-timing-function: linear;
+    animation-name: butn;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    font-family: var(--main_text);
+    font-size: 22px;
+    
+}
+
+.horor_but:hover{
+    animation-play-state: running;
+}
+
+    
+    
+
+@keyframes butn{
+    25%{
+        background-image: url(./img/repo.webp);
+    }
+    50%{
+        background-image: url(./img/outlast.webp);
+    }
+    75%{
+        background-image: url(./img/phasmophobia.webp);
+    }
+    100%{
+        background-image: url(./img/repo.webp );
+    }
 }
 
 .game-card {
@@ -228,7 +274,7 @@ nav {
 }
 .game-name-modal{
     display: flex;
-    font-size: 30px;
+    font-size: 48px;
     height: 50px;
     color: var(--logo_color2);
     font-family: var(--main_text);
@@ -240,6 +286,9 @@ nav {
     font-family: var(--aditional_text);
     font-size: 20px;
     width: 600px;
+    background-color: var(--games_back);
+    border-radius: 20px;
+    padding: 5px;
 }
 .game-img-modal{
     display: flex;
