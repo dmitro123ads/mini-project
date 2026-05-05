@@ -11,7 +11,8 @@ html{
     --shadow: rgba(0, 0, 0, 0.8);
     --main_text: Inria Sans;
     --aditional_text: nunito;
-    --games_back: rgba(0, 0, 0, 0.2)
+    --games_back: rgba(0, 0, 0, 0.2);
+    --footer_text: white;
 }
 
 .logo {
@@ -218,10 +219,10 @@ nav a:hover{
         background-image: url(./img/drg.webp);
     }
     50%{
-        background-image: url(./img/outlast.webp);
+        background-image: url(./img/doom.webp);
     }
     75%{
-        background-image: url(./img/phasmophobia.webp);
+        background-image: url(./img/batle.webp);
     }
     100%{
         background-image: url(./img/Ultrakill_cover.webp );
@@ -229,9 +230,10 @@ nav a:hover{
 }
 
 .game-card {
-    transition: box-shadow;
+    transition: box-shadow transform;
     transition-timing-function: ease-out;
     margin: 0 auto;
+    transition-duration: 150ms;
 }
 
 .game-card:hover {
@@ -290,14 +292,14 @@ nav a:hover{
     display: flex;
     width: 320px;
     height: 489px;
-    background-image: url(./img/amnesia.webp);
+    background-image: url(./img/doom.webp);
     background-size: cover;
 }
 .game-img8 {
     display: flex;
     width: 320px;
     height: 489px;
-    background-image: url(./img/amnesia.webp);
+    background-image: url(./img/batle.webp);
     background-size: cover;
 }
 .but {
@@ -375,7 +377,39 @@ nav a:hover{
 
 
 footer {
+    display: grid;
+    grid-template-columns: 3 1fr;
     margin-top: 150px;
     background-color: var(--backg_color);
     height: 300px;
+    color: var(--footer_text);
+}
+.footer_column{
+    display: grid;
+    grid-template-columns: repeat(1 1fr);
+    padding: 30px;
+    padding-bottom: 0;
+
+}
+.footer_logo{
+    font-family: var(--logo_font);
+    font-size: 40px;
+}
+.footer_list{
+    list-style: none;
+    font-size: 20px;
+    font-family: var(--aditional_text);
+    
+}
+.footer_list li{
+    margin-bottom: 8px  ;
+}
+.footer_list a{
+    text-decoration: none;
+    color: var(--footer_text);
+    
+}
+.footer_list a:hover{
+    text-decoration: underline;
+    color: var(--footer_text);
 }
