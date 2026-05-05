@@ -145,14 +145,20 @@ nav a:hover{
     margin-top: 140px;
     font-family: var(--main_text);
 }
+.genre_butns{
+    margin: 0 auto;
+    text-align: center;
+}
 .horor_but{
     background-image: url(./img/phasmophobia.webp);
+    background-size: cover;
     height: 80px;
     width: 250px;
+    margin: 10px;
     border-radius: 15px;
     color: var(--logo_color2);
     animation-timing-function: linear;
-    animation-name: butn;
+    animation-name: hor_butn;
     animation-duration: 6s;
     animation-iteration-count: infinite;
     animation-play-state: paused;
@@ -168,7 +174,7 @@ nav a:hover{
     
     
 
-@keyframes butn{
+@keyframes hor_butn{
     25%{
         background-image: url(./img/repo.webp);
     }
@@ -179,7 +185,46 @@ nav a:hover{
         background-image: url(./img/phasmophobia.webp);
     }
     100%{
-        background-image: url(./img/repo.webp );
+        background-image: url(./img/amnesia.webp );
+    }
+}
+
+.fps_but{
+    background-image: url(./img/Ultrakill_cover.webp);
+    background-size: cover;
+    height: 80px;
+    width: 250px;
+    border-radius: 15px;
+    color: var(--logo_color2);
+    animation-timing-function: linear;
+    animation-name: fps_butn;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    font-family: var(--main_text);
+    font-size: 22px;
+    
+}
+
+.fps_but:hover{
+    animation-play-state: running;
+}
+
+    
+    
+
+@keyframes fps_butn{
+    25%{
+        background-image: url(./img/drg.webp);
+    }
+    50%{
+        background-image: url(./img/outlast.webp);
+    }
+    75%{
+        background-image: url(./img/phasmophobia.webp);
+    }
+    100%{
+        background-image: url(./img/Ultrakill_cover.webp );
     }
 }
 
@@ -198,31 +243,62 @@ nav a:hover{
 
 .game-img {
     display: flex;
-    width: 318px;
+    width: 320px;
     height: 489px;
     background-image: url(./img/phasmophobia.webp);
+    background-size: cover;
 
 }
 .game-img2 {
     display: flex;
-    width: 318px;
+    width: 320px;
     height: 489px;
     background-image: url(./img/repo.webp);
+    background-size: cover;
 
 }
 .game-img3 {
     display: flex;
-    width: 318px;
+    width: 320px;
     height: 489px;
     background-image: url(./img/outlast.webp);
+    background-size: cover;
 
 }
 .game-img4 {
     display: flex;
-    width: 318px;
+    width: 320px;
     height: 489px;
-    background-image: url(./img/phasmophobia.webp);
-
+    background-image: url(./img/amnesia.webp);
+    background-size: cover;
+}
+.game-img5 {
+    display: flex;
+    width: 320px;
+    height: 489px;
+    background-image: url(./img/Ultrakill_cover.webp);
+    background-size: cover;
+}
+.game-img6 {
+    display: flex;
+    width: 320px;
+    height: 489px;
+    background-image: url(./img/drg.webp);
+    background-size: cover;
+}
+.game-img7 {
+    display: flex;
+    width: 320px;
+    height: 489px;
+    background-image: url(./img/amnesia.webp);
+    background-size: cover;
+}
+.game-img8 {
+    display: flex;
+    width: 320px;
+    height: 489px;
+    background-image: url(./img/amnesia.webp);
+    background-size: cover;
 }
 .but {
     z-index: 10;
@@ -242,17 +318,17 @@ nav a:hover{
     transition-timing-function: ease-out;
 }
 
-.game-img:hover .but,.game-img2:hover .but,.game-img3:hover .but,.game-img4:hover .but {
+.game-img:hover .but,.game-img2:hover .but,.game-img3:hover .but,.game-img4:hover .but,.game-img5:hover .but,.game-img6:hover .but,.game-img7:hover .but,.game-img8:hover .but {
     opacity: 1;
 }
 
-.game-name,
-.game-price {
+.game-info {
     color: var(--logo_color2);
     font-family: var(--aditional_text);
+    margin-left: 10px;
 }
 
-.horor {
+.game_genre {
     border-radius: 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
