@@ -378,7 +378,7 @@ nav a:hover{
 
 footer {
     display: grid;
-    grid-template-columns: 3 1fr;
+    grid-template-columns: repeat(3, 1fr);
     margin-top: 150px;
     background-color: var(--backg_color);
     height: 300px;
@@ -386,11 +386,18 @@ footer {
 }
 .footer_column{
     display: grid;
-    grid-template-columns: repeat(1 1fr);
+    grid-template-columns: repeat(1, 2fr);
     padding: 30px;
     padding-bottom: 0;
-
 }
+.footer_column3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px;
+    padding-bottom: 0;
+    margin-top: 100px;
+}
+
 .footer_logo{
     font-family: var(--logo_font);
     font-size: 40px;
@@ -412,4 +419,23 @@ footer {
 .footer_list a:hover{
     text-decoration: underline;
     color: var(--footer_text);
+}
+.footer_img{
+    background-color: var(--footer_text);
+    width: 50px;
+    border-radius: 1000px;
+    border: 1px var(--footer_text) solid;
+
+}
+.footer_img2{
+    background-color: var(--footer_text);
+    width: 50px;
+    border-radius: 1000px;
+    border: 1px var(--footer_text) solid;
+}
+.footer_img3{
+    background-color: var(--footer_text);
+    width: 50px;
+    border-radius: 1000px;
+    border: 1px var(--footer_text) solid;
 }
